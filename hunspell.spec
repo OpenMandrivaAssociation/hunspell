@@ -12,7 +12,7 @@ Group:		Text tools
 Url:		http://hunspell.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.bz2
 BuildRequires:	libreadline-devel
-BuildRequires:	ncursesw-devel
+BuildRequires:	libncursesw-devel
 BuildRequires:	bison
 BuildRequires:	libtool
 Requires:	%{libname} = %{version}-%{release}
