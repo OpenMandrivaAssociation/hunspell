@@ -13,6 +13,7 @@ Url:		http://hunspell.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.bz2
 BuildRequires:	libreadline-devel
 BuildRequires:	libncursesw-devel
+BuildRequires:	ncurses-devel
 BuildRequires:	bison
 BuildRequires:	libtool
 Requires:	%{libname} = %{version}-%{release}
@@ -70,6 +71,7 @@ Development files and headers for hunspell.
 %{_bindir}/*
 %{_mandir}/hu/man1/*
 %{_mandir}/man1/*
+%{_mandir}/man3/
 
 %files -n %{libname}
 %defattr(-,root,root)
