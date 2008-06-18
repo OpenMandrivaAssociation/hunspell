@@ -5,7 +5,7 @@
 
 Summary:	Hunspell is a spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.2.2
+Version:	1.2.4
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Text tools
@@ -26,7 +26,6 @@ word compounding or character encoding.
 %package -n %{libname}
 Summary:	Shared libraries for hunspell
 Group:		System/Libraries
-Requires:	%{name} = %{version}-%{release}
 
 %description -n %{libname}
 Shared libraries for hunspell.
