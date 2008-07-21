@@ -3,7 +3,7 @@
 %define libname %mklibname %{name} %{api} %{major}
 %define develname %mklibname %{name} -d
 
-Summary:	Hunspell is a spell checker and morphological analyzer library
+Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
 Version:	1.2.6
 Release:	%mkrel 1
