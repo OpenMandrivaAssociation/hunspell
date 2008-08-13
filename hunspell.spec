@@ -6,7 +6,7 @@
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
 Version:	1.2.6
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2+
 Group:		Text tools
 Url:		http://hunspell.sourceforge.net/
@@ -29,6 +29,7 @@ word compounding or character encoding.
 %package -n %{libname}
 Summary:	Shared libraries for hunspell
 Group:		System/Libraries
+Provides:	libhunspell = %{version}-%{release}
 
 %description -n %{libname}
 Shared libraries for hunspell.
