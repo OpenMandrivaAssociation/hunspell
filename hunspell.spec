@@ -8,7 +8,7 @@ Name:		hunspell
 Version:	1.2.7
 Release:	%mkrel 1
 License:	GPLv2+
-Group:		Text tools
+Group:		System/Internationalization
 Url:		http://hunspell.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.bz2
 # (tpg) Mdv's specific path to myspell dictionaries
