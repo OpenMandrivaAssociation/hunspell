@@ -5,8 +5,8 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.2.7
-Release:	%mkrel 2
+Version:	1.2.8
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.sourceforge.net/
@@ -51,7 +51,8 @@ Development files and headers for hunspell.
 %build
 %configure2_5x \
 	--with-ui \
-	--with-readline
+	--with-readline \
+	--with-experimental
 
 %make
 
