@@ -5,14 +5,14 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.2.8
-Release:	%mkrel 4
+Version:	1.2.12
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.bz2
 # (tpg) Mdv's specific path to myspell dictionaries
-Patch0:		%{name}-1.2.6-dict-path.patch
+Patch0:		%{name}-1.2.12-dict-path.patch
 BuildRequires:	libreadline-devel
 BuildRequires:	libncursesw-devel
 BuildRequires:	ncurses-devel
@@ -52,7 +52,8 @@ Development files and headers for hunspell.
 %configure2_5x \
 	--with-ui \
 	--with-readline \
-	--with-experimental
+	--with-experimental \
+	--disable-rpath
 
 %make
 
@@ -92,7 +93,6 @@ make check
 %files -n %{develname}
 %defattr(-,root,root)
 %dir %{_includedir}/%{name}
-%{_includedir}/*.h
 %{_includedir}/%{name}/*.h*
 %{_libdir}/*.a
 %{_libdir}/*.la
