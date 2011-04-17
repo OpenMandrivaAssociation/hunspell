@@ -1,16 +1,16 @@
 %define major 0
-%define api 1.2
+%define api 1.3
 %define libname %mklibname %{name} %{api} %{major}
 %define develname %mklibname %{name} -d
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.2.15
+Version:	1.3.2
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.gz
 # (tpg) Mdv's specific path to myspell dictionaries
 Patch0:		%{name}-1.2.15-dict-path.patch
 BuildRequires:	libreadline-devel
@@ -98,5 +98,5 @@ make check
 %{_libdir}/*.la
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
-%{_mandir}/hu/man4/*
+%lang(hu) %{_mandir}/hu/man4/*
 %{_mandir}/man4/*
