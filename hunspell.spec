@@ -95,7 +95,6 @@ make check
 %dir %{_includedir}/%{name}
 %{_includedir}/%{name}/*.h*
 %{_libdir}/*.a
-%{_libdir}/*.la
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 %lang(hu) %{_mandir}/hu/man4/*
