@@ -1,0 +1,11 @@
+diff -Naur hunspell-1.2.15//src/tools/hunspell.cxx hunspell-1.2.15.tpg//src/tools/hunspell.cxx
+--- hunspell-1.2.15//src/tools/hunspell.cxx	2011-01-21 17:01:29.000000000 +0000
++++ hunspell-1.2.15.tpg//src/tools/hunspell.cxx	2011-03-12 13:37:24.000000000 +0000
+@@ -64,6 +64,7 @@
+     "/usr/share/hunspell:" \
+     "/usr/share/myspell:" \
+     "/usr/share/myspell/dicts:" \
++    "/usr/share/dict/ooo:" \
+     "/Library/Spelling"
+ #define USEROOODIR \
+     ".openoffice.org/3/user/wordbook:" \
