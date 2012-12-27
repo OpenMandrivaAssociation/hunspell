@@ -68,7 +68,7 @@ make check
 %{_bindir}/*
 %lang(hu) %{_mandir}/hu/man1/*
 %{_mandir}/man1/*
-%{_mandir}/man3/
+%{_mandir}/man3/*
 
 %files -n %{libname}
 %{_libdir}/*%{api}.so.%{major}*
