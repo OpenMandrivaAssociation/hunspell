@@ -66,7 +66,7 @@ make check
 %files -f %{name}.lang
 %doc AUTHORS NEWS README
 %{_bindir}/*
-%{_mandir}/hu/man1/*
+%lang(hu) %{_mandir}/hu/man1/*
 %{_mandir}/man1/*
 %{_mandir}/man3/
 
@@ -76,6 +76,7 @@ make check
 %files -n %{devname}
 %dir %{_includedir}/%{name}
 %{_includedir}/%{name}/*.h*
+%{_libdir}/libparsers.a
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
 %lang(hu) %{_mandir}/hu/man4/*
