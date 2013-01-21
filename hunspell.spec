@@ -16,7 +16,7 @@ Patch0:		%{name}-1.2.15-dict-path.patch
 
 BuildRequires:	bison
 BuildRequires:	libtool
-BuildRequires:	libreadline-devel
+BuildRequires:	readline-devel
 BuildRequires:	pkgconfig(ncursesw)
 
 %description
