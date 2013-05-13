@@ -71,7 +71,7 @@ make check
 %{_mandir}/man3/*
 
 %files -n %{libname}
-%{_libdir}/*%{api}.so.%{major}*
+%{_libdir}/libhunspell-%{api}.so.%{major}*
 
 %files -n %{devname}
 %dir %{_includedir}/%{name}
