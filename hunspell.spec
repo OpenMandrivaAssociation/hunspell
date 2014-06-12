@@ -5,8 +5,8 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.3.2
-Release:	13
+Version:	1.3.3
+Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.sourceforge.net/
@@ -68,7 +68,7 @@ make check
 %{_bindir}/*
 %lang(hu) %{_mandir}/hu/man1/*
 %{_mandir}/man1/*
-%{_mandir}/man3/*
+%{_mandir}/man5/*
 
 %files -n %{libname}
 %{_libdir}/libhunspell-%{api}.so.%{major}*
@@ -76,9 +76,6 @@ make check
 %files -n %{devname}
 %dir %{_includedir}/%{name}
 %{_includedir}/%{name}/*.h*
-%{_libdir}/libparsers.a
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
-%lang(hu) %{_mandir}/hu/man4/*
-%{_mandir}/man4/*
-
+%{_mandir}/man3/*
