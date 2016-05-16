@@ -5,12 +5,12 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.3.3
-Release:	8
+Version:	1.4.1
+Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://hunspell.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/hunspell/%{name}-%{version}.tar.gz
+Url:		http://hunspell.github.io/
+Source0:	https://codeload.github.com/hunspell/hunspell/%{name}-%{version}.tar.gz
 # (tpg) Mdv's specific path to myspell dictionaries
 Patch0:		%{name}-1.2.15-dict-path.patch
 
