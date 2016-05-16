@@ -1,5 +1,5 @@
 %define major 0
-%define api 1.3
+%define api 1.4
 %define libname	%mklibname %{name} %{api} %{major}
 %define devname	%mklibname %{name} -d
 
@@ -18,6 +18,7 @@ BuildRequires:	bison
 BuildRequires:	libtool
 BuildRequires:	readline-devel >= 7.0
 BuildRequires:	pkgconfig(ncursesw)
+BuildRequires:	gettext-devel
 
 %description
 Hunspell is a spell checker and morphological analyzer library
@@ -62,9 +63,7 @@ Development files and headers for hunspell.
 %install
 %makeinstall_std
 
-%find_lang %{name}
-
-%files -f %{name}.lang
+%files
 %doc AUTHORS NEWS README
 %{_bindir}/*
 %lang(hu) %{_mandir}/hu/man1/*
