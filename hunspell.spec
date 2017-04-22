@@ -1,19 +1,20 @@
 %define major 0
-%define api 1.4
+%define api 1.6
 %define libname	%mklibname %{name} %{api} %{major}
 %define devname	%mklibname %{name} -d
+%define _disable_rebuild_configure 1
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.4.1
+Version:	1.6.1
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.github.io/
 Source0:	https://codeload.github.com/hunspell/hunspell/%{name}-%{version}.tar.gz
 # (tpg) Mdv's specific path to myspell dictionaries
-Patch0:		%{name}-1.2.15-dict-path.patch
-
+Patch0:		%{name}-1.6.1-dict-path.patch
+BuildRequires:	autoconf
 BuildRequires:	bison
 BuildRequires:	libtool
 BuildRequires:	readline-devel >= 7.0
@@ -47,6 +48,7 @@ Development files and headers for hunspell.
 %apply_patches
 
 %build
+autoreconf -fiv
 %configure \
 	--disable-static \
 	--with-ui \

@@ -1,0 +1,10 @@
+--- hunspell-1.6.1/src/tools/hunspell.cxx.orig	2017-04-22 06:10:02.752532161 +0100
++++ hunspell-1.6.1/src/tools/hunspell.cxx	2017-04-22 06:10:23.640330305 +0100
+@@ -119,6 +119,7 @@
+   "/usr/share/hunspell:"      \
+   "/usr/share/myspell:"       \
+   "/usr/share/myspell/dicts:" \
++  "/usr/share/dict/ooo:" \
+   "/Library/Spelling"
+ #define USEROOODIR {                  \
+   ".openoffice.org/3/user/wordbook", \
