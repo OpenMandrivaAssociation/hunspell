@@ -6,8 +6,8 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.6.2
-Release:	3
+Version:	1.7.0
+Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.github.io/
@@ -56,14 +56,14 @@ autoreconf -fiv
 	--with-experimental \
 	--disable-rpath
 
-%make
+%make_build
 
 # (tpg) disable checks as they falls
 #check
 #make check
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc AUTHORS NEWS README
