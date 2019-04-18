@@ -68,6 +68,7 @@ autoreconf -fiv
 %files
 %doc AUTHORS NEWS README
 %{_bindir}/*
+%{_datadir}/*
 %lang(hu) %{_mandir}/hu/man1/*
 %{_mandir}/man1/*
 %{_mandir}/man5/*
