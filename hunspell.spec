@@ -1,5 +1,5 @@
 %define major 0
-%define api 1.6
+%define api 1.7
 %define libname	%mklibname %{name} %{api} %{major}
 %define devname	%mklibname %{name} -d
 %define _disable_rebuild_configure 1
