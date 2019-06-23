@@ -29,7 +29,7 @@ word compounding or character encoding.
 %package tools
 Summary:	Tools for hunspell
 Group:		System/Internationalization
-Conflicts	%{name} < 1.7.0-2
+Conflicts:	%{name} < 1.7.0-2
 
 %description tools
 This package contains the additional tools for %{name}.
