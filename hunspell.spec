@@ -7,7 +7,7 @@
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
 Version:	1.7.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.github.io/
@@ -26,6 +26,14 @@ Hunspell is a spell checker and morphological analyzer library
 and program designed for languages with rich morphology and complex
 word compounding or character encoding.
 
+%package tools
+Summary:	Tools for hunspell
+Group:		System/Internationalization
+Conflicts	%{name} < 1.7.0-2
+
+%description tools
+This package contains the additional tools for %{name}.
+
 %package -n %{libname}
 Summary:	Shared libraries for hunspell
 Group:		System/Libraries
@@ -38,6 +46,7 @@ Shared libraries for hunspell.
 Summary:	Development files for hunspell
 Group:		Development/C
 Requires:	%{libname} = %{version}-%{release}
+Requires:	%{libname}-tools = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 
 %description -n %{devname}
@@ -67,11 +76,15 @@ autoreconf -fiv
 
 %files
 %doc AUTHORS NEWS README
-%{_bindir}/*
+%{_bindir}/%{name}
 %{_datadir}/*
 %lang(hu) %{_mandir}/hu/man1/*
 %{_mandir}/man1/*
 %{_mandir}/man5/*
+
+%files tools
+%{_bindir}/*
+%exclude %{_bindir}/%{name}
 
 %files -n %{libname}
 %{_libdir}/libhunspell-%{api}.so.%{major}*
