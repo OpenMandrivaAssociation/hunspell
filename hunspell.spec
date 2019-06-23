@@ -7,7 +7,7 @@
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
 Version:	1.7.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://hunspell.github.io/
@@ -46,7 +46,7 @@ Shared libraries for hunspell.
 Summary:	Development files for hunspell
 Group:		Development/C
 Requires:	%{libname} = %{version}-%{release}
-Requires:	%{libname}-tools = %{version}-%{release}
+Requires:	%{name}-tools = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 
 %description -n %{devname}
