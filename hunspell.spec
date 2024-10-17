@@ -10,7 +10,7 @@ Version:	1.7.2
 Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://hunspell.github.io/
+Url:		https://hunspell.github.io/
 Source0:	https://github.com/hunspell/hunspell/archive/v%{version}/%{name}-%{version}.tar.gz
 # (tpg) Mdv's specific path to myspell dictionaries
 Patch0:		%{name}-1.6.1-dict-path.patch
