@@ -14,6 +14,10 @@ Url:		https://hunspell.github.io/
 Source0:	https://github.com/hunspell/hunspell/archive/v%{version}/%{name}-%{version}.tar.gz
 # (tpg) Mdv's specific path to myspell dictionaries
 Patch0:		%{name}-1.6.1-dict-path.patch
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	autoconf
 BuildRequires:	bison
 BuildRequires:	libtool
