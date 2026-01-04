@@ -7,7 +7,7 @@
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
 Version:	1.7.2
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		https://hunspell.github.io/
@@ -77,11 +77,14 @@ autoreconf -fiv
 
 %install
 %make_install
+%find_lang %{name} --all-name --with-man
 
-%files
+%files -f %{name}.lang
 %doc AUTHORS NEWS README
 %{_bindir}/%{name}
-%{_datadir}/*
+#{_datadir}/*
+%{_mandir}/man1/*.1*
+%{_mandir}/man5/*.5*
 
 %files tools
 %{_bindir}/*
