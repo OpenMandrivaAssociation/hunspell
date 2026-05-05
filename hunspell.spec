@@ -57,10 +57,10 @@ Development files and headers for hunspell.
 %prep
 %setup -q
 %autopatch -p1
+slibtoolize --force
+autoreconf -fiv
 
 %build
-export LIBTOOL=rclibtool
-autoreconf -fiv
 %configure \
 	--disable-static \
 	--with-ui \
