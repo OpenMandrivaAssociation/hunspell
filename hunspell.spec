@@ -59,6 +59,7 @@ Development files and headers for hunspell.
 %autopatch -p1
 
 %build
+export LIBTOOL=rclibtool
 autoreconf -fiv
 %configure \
 	--disable-static \
