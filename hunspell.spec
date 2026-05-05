@@ -6,8 +6,8 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.7.2
-Release:	3
+Version:	1.7.3
+Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		https://hunspell.github.io/
@@ -15,12 +15,10 @@ Source0:	https://github.com/hunspell/hunspell/archive/v%{version}/%{name}-%{vers
 # (tpg) Mdv's specific path to myspell dictionaries
 Patch0:		%{name}-1.6.1-dict-path.patch
 BuildRequires:	automake
-BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires:	autoconf
 BuildRequires:	bison
-BuildRequires:	libtool
 BuildRequires:	readline-devel >= 7.0
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	gettext-devel

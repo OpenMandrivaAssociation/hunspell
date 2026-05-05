@@ -1,6 +1,6 @@
-diff -up hunspell-1.7.2/src/tools/hunspell.cxx.1~ hunspell-1.7.2/src/tools/hunspell.cxx
---- hunspell-1.7.2/src/tools/hunspell.cxx.1~	2022-12-29 21:10:49.000000000 +0100
-+++ hunspell-1.7.2/src/tools/hunspell.cxx	2026-01-04 18:52:36.643237309 +0100
+diff -up hunspell-1.7.3/src/tools/hunspell.cxx.1~ hunspell-1.7.3/src/tools/hunspell.cxx
+--- hunspell-1.7.3/src/tools/hunspell.cxx.1~	2026-05-05 09:19:07.000000000 +0200
++++ hunspell-1.7.3/src/tools/hunspell.cxx	2026-05-05 21:14:42.373385372 +0200
 @@ -107,6 +107,7 @@
  #include <sys/stat.h>
  #include <dirent.h>
@@ -9,7 +9,7 @@ diff -up hunspell-1.7.2/src/tools/hunspell.cxx.1~ hunspell-1.7.2/src/tools/hunsp
  #include "../parsers/textparser.hxx"
  #include "../parsers/htmlparser.hxx"
  #include "../parsers/latexparser.hxx"
-@@ -115,10 +116,17 @@
+@@ -115,6 +116,12 @@
  #include "../parsers/xmlparser.hxx"
  #include "../parsers/odfparser.hxx"
  
@@ -20,14 +20,17 @@ diff -up hunspell-1.7.2/src/tools/hunspell.cxx.1~ hunspell-1.7.2/src/tools/hunsp
 +#endif
 +
  #define LIBDIR                \
+   DATADIR "/hunspell:"        \
+   DATADIR "/myspell:"         \
+@@ -122,6 +129,7 @@
    "/usr/share/hunspell:"      \
    "/usr/share/myspell:"       \
    "/usr/share/myspell/dicts:" \
-+  "/usr/share/dict/ooo:" \
++  "/usr/share/dict/ooo:"      \
    "/Library/Spelling"
  #define USEROOODIR {                  \
    ".openoffice.org/3/user/wordbook", \
-@@ -126,6 +134,7 @@
+@@ -129,6 +137,7 @@
    ".openoffice.org2.0/user/wordbook",\
    "Library/Spelling" }
  #define OOODIR                                       \
