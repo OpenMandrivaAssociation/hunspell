@@ -6,7 +6,7 @@
 
 Summary:	Spell checker and morphological analyzer library
 Name:		hunspell
-Version:	1.7.3
+Version:	1.7.4
 Release:	1
 License:	GPLv2+
 Group:		System/Internationalization
